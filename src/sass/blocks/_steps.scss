@@ -1,0 +1,77 @@
+.steps {
+    /* background-color: #fff; */
+    //background-image: url('../../img/steps/bg_rose_1.jpg');
+    background-color: #fff;
+    padding: 0;
+    @include section-border;
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+    }
+    &__item {
+        position: relative;
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 350px;
+        margin: 30px 0;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include steps-bg_dark;
+        color: #fff;
+        box-shadow: 0 0 5px black;
+        transition: 300ms;
+        text-align: center;
+        & * {
+            will-change: transform, scale;
+        }
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px black;
+        }
+        &:active {
+            transform: scale(1);
+            background-color: rgba(59, 59, 195, 0.75);
+            transition: all 200ms;
+        }
+    }
+    &__logo {
+        font-family: 'icomoon';
+        font-size: 80px;
+        text-shadow: 0 0 5px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    &__descr {
+        margin: 0 10px;
+        line-height: 28px;
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+.divider {
+    margin: 20px 20px;
+    height: 2px;
+    background-color: rgb(77, 77, 99);
+}
+
+//test
+.item-wrapper,
+.item-wrapper_sec {
+    display: none;
+}
+
+.hide {
+    display: none;
+    transition: all 200ms;
+}
+
+.show {
+    display: block;
+}

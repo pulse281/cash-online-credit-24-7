@@ -1,0 +1,26 @@
+.promo {
+    width: 100%;
+    background: url('../img/Layer_0_short.jpg') center top/cover no-repeat;
+    @include section-border;
+    .promo__wrapper {
+        min-height: 310px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__descr {
+        color: #fff;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__list {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}

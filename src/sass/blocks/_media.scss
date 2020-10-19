@@ -1,0 +1,194 @@
+@media (min-width: 1261px) {
+    .promo {
+        display: flex;
+        align-items: center;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .container {
+        width: 95%;
+    }
+    .steps__wrapper {
+        width: auto;
+    }
+    .steps__item {
+        width: 300px;
+    }
+    .steps__title {
+        font-size: 16px;
+    }
+    .steps__descr {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 985px) {
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 100%;
+        width: 70%;
+        left: -100%;
+        top: 0;
+        background-color: rgba($main-blue, 0.90);
+        transition: left 0.5s;
+        .menu__item {
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 20px;
+            border: none;
+            a {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    .menu-mobile_active {
+        left: 0;
+    }
+    .hamburger {
+        display: flex;
+        &__item_left,
+        &__item_right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        &__item_right {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .promo {
+        background: url('../img/Layer_0_mob.jpg') center top/cover no-repeat;
+    }
+    .promo__subtitle {
+        font-size: 16px;
+    }
+    .promo__list {
+        font-size: 14px;
+    }
+    .offer-wrapper {
+        padding: 0 20px;
+    }
+    .btn_offer-request:hover {
+        border: 1px solid black;
+        box-shadow: none;
+    }
+    .steps__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .steps__item {
+        width: 350px;
+        box-shadow: 0 0 10px black;
+    }
+    .steps__item:hover {
+        transform: none;
+    }
+    .steps__item:active {
+        transform: scale(1);
+        background-color: rgba(59, 59, 195, 0.75);
+        transition: all 200ms;
+    }
+}
+
+@media (max-width: 800px) {
+    .promo .promo__wrapper {
+        min-height: 210px;
+    }
+    .calculator {
+        display: none;
+    }
+    .promo__descr {
+        width: 100%;
+    }
+    .offer {
+        flex-direction: column;
+        width: 70%;
+        margin: 30px auto 0;
+        &__header {
+            width: auto;
+            border-right: 0;
+            border-bottom: 1px solid black;
+        }
+        &__descr {
+            width: auto;
+            margin: 0;
+        }
+    }
+    .offer-wrapper {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    .promo {
+        display: none;
+    }
+    .promo__subtitle {
+        font-size: 15px;
+    }
+    .offer {
+        width: auto;
+        &__term {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        &__info,
+        &__term-small {
+            font-size: 10px;
+        }
+    }
+    .steps__item {
+        width: 300px;
+    }
+    .text__calculation {
+        padding: 0;
+        li {
+            text-indent: 15px;
+        }
+    }
+    .text__advantages-wrapper {
+        margin: 0;
+    }
+    .text__advantages {
+        padding: 0;
+        li:first-child {
+            display: block;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        li {
+            margin: 0;
+        }
+    }
+    .questions {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .promo {
+        background: url('../img/Layer_1_mob.jpg') center top/cover no-repeat;
+    }
+}

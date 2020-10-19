@@ -1,0 +1,74 @@
+.text {
+    background-color: rgba(240, 248, 255, .8);
+    padding: 20px 0;
+    font-size: 14px;
+    @include section-border;
+    &__wrapper {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+        p {
+            text-indent: 20px;
+        }
+    }
+    &__calculation {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 15px;
+        li {
+            list-style: none;
+            &::before {
+                content: '\2714';
+                margin-right: 5px;
+            }
+        }
+        li:first-child {
+            text-indent: 0;
+            &::before {
+                content: '';
+                margin: 0;
+            }
+        }
+    }
+    &__advantages-wrapper {
+        margin-top: 20px;
+        margin-left: 10%;
+    }
+    &__advantages {
+        position: relative;
+        padding-left: 100px;
+        font-size: 15px;
+        & li:first-child {
+            margin-left: 0;
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 500;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 20px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &:nth-child(1) li:first-child::before {
+            background-image: url("../img/text/clock-regular.svg");
+        }
+        &:nth-child(2) li:first-child::before {
+            background-image: url("../img/text/shield-alt-solid.svg");
+        }
+        &:nth-child(3) li:first-child::before {
+            background: url("../img/text/percent-solid.svg") center center no-repeat;
+        }
+        & li {
+            list-style: none;
+            margin-left: 40px;
+            &::before {
+                content: '\2714';
+                margin-right: 5px;
+            }
+        }
+    }
+}

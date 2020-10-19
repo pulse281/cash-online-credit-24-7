@@ -1,0 +1,25 @@
+@import '../css/bootstrap-reboot.min.css';
+@import "../css/fonts.css";
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+@import 'blocks/variables';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/button';
+@import 'blocks/calculator';
+@import 'blocks/catalog';
+@import 'blocks/steps';
+@import 'blocks/text';
+@import 'blocks/questions';
+@import 'blocks/footer';
+@import 'blocks/information';
+@import 'blocks/aside-offer';
+@import 'blocks/media';

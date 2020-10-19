@@ -1,0 +1,31 @@
+.information {
+    background-color: #ededed;
+    @include section-border;
+}
+
+.mfo-contacts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__item {
+        padding: 0;
+        max-width: 350px;
+        border: 1px solid black;
+        border-radius: 10px;
+        list-style: none;
+        background-color: #e6ede9;
+        font-size: 12px;
+        text-align: center;
+        li {
+            padding: 5px 10px;
+            width: 100%;
+            border-bottom: 1px solid black;
+            &:first-child {
+                font-weight: 500;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@mixin steps-bg {
+    background: (rgb59, 59, 159);
+    background: linear-gradient(90deg, rgba(59, 59, 159, 0.75) 0%, rgba(59, 59, 159, 0.9) 25%, rgba(59, 59, 159, 0.9) 75%, rgba(108, 108, 170, 0.75) 100%);
+    ;
+}
+
+@mixin steps-bg_dark {
+    background: rgb(10, 35, 81);
+    background: linear-gradient(90deg, rgba(10, 35, 81, 0.83) 0%, rgba(10, 35, 81, 0.9) 25%, rgba(10, 35, 81, 0.9) 75%, rgba(10, 35, 81, 0.83) 100%);
+}
+
+@mixin section-border {
+    border-bottom: 1px solid #5f5c5c;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+$main-blue: rgb(10, 35, 81);
